@@ -15,7 +15,7 @@ export class FilesService {
 
   async findAll(): Promise<File[]> {
     return this.prisma.file.findMany({
-      include: { children: true }, // Include children in the response
+      include: { children: true }, 
     });
   }
 
